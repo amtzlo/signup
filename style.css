@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,19 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20vh;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgba(102,79,100, 0.4);
+    padding: 20px 20px;
+    font-family: 'Pacifico', sans-serif;
 }
 .input {
     margin: 15vh 0;
@@ -26,8 +41,9 @@ body {
 }
 
 .img-bg {
-    width: 70%;
-    background-color: blueviolet;
+    width: 65%;
+    background: no-repeat center url('img/img.jpg');
+    background-size: cover;
 }
 
 label {
@@ -46,23 +62,51 @@ label {
 
 .form {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-.form-row {
-    display: flex;
+    flex-direction: row;
+    gap: 64px;
 }
 .form-column {
     width: 49%;
 
 }
+.form-col {
+    display: flex;
+    flex-direction: column;
+
+}
+.form-element {
+    margin: 12px 0px;
+}
+input {
+    padding: 5px 10px;
+    border: 1px #E5E7EB solid;
+}
+input:hover {
+    border: 1px solid blue;
+}
+
+/* #TODO: Figure out how to change the input active border color */
+
 .low-part {
     padding: 24px 36px;
 }
 button {
-    padding: 10px;
+    padding: 12px 34px;
+    background-color: #664f64;
+    border: 1px #664f64;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
 }
 p.log-in{
     margin-top: 30px;
 }
+.link {
+    color: #664f64;
+    font-weight: bolder;
+}
 
+img {
+    width: 60px;
+}
